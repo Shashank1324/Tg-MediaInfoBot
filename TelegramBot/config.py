@@ -10,3 +10,15 @@ load_dotenv("config.env")
 
 SUDO_USERID = json.loads(getenv("SUDO_USERID","6561715152"))
 AUTHORIZED_CHATS = json.loads(getenv("AUTHORIZED_CHATS","6561715152"))
+
+    "addons": [], 
+     "buildpacks": [{ 
+         "url": "heroku/python" 
+     }], 
+     "formation": { 
+         "worker": { 
+             "quantity": 1, 
+             "size": "eco" 
+         } 
+     } 
+ }
